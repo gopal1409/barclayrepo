@@ -1,0 +1,74 @@
+    1  yum update -y
+    2  yum install git
+    3  clear
+    4  yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel
+    5  history
+    6  clear
+    7  yum install gcc perl-ExtUtils-MakeMaker
+    8  clear
+    9  history
+   10  cd /usr/src
+   11  yum install wget
+   12  wget https://www.kernel.org/pub/software/scm/git/git-2.22.0.tar.gz
+   13  ls
+   14  tar xzf git-2.22.0.tar.gz 
+   15  ls
+   16  cd git-2.22.0
+   17  make prefix=/usr/local/git all
+   18  make prefix=/usr/local/git install
+   19  ls
+   20  echo "export PATH=/usr/local/git/bin:$PATH" >> /etc/bashrc
+   21  source /etc/bashrc
+   22  s
+   23  ls
+   24  cd /home
+   25  ls
+   26  cd /root
+   27  ls
+   28  cd /
+   29  ls
+   30  cd local-repo/
+   31  ls
+   32  clear
+   33  git status
+   34  vi calc.py 
+   35  git branch calc-divide
+   36  git branch
+   37  git checkout calc-divide
+   38  git branch
+   39  git status
+   40  vi calc.py 
+   41  git add calc.py 
+   42  git status
+   43  git commit -m "modified divide function"
+   44  git log
+   45  git remote -a
+   46  git remote -v
+   47  git branch -a
+   48  clear
+   49  git branch -a
+   50  git push -u origing calc-divide
+   51  git push -u origine calc-divide
+   52  history
+   53  git push -u origine calc-divide
+   54  clear
+   55  git push -u origin calc-divide
+   56  git branch
+   57  git push -u origin calc-divide
+   58  gir branch -a
+   59  git branch -a
+   60  git checkout master
+   61  git branch
+   62  git pull orgin master
+   63  git pull origin master
+   64  git merge calc-divide
+   65  git branch -a
+   66  clear
+   67  git branch -d calc-divide
+   68  git branch
+   69  git branch -a
+   70  git push origin --delete calc-divide
+   71  git branch -a
+   72  clear
+   73  history
+   74  history > gitcommand
